@@ -60,10 +60,10 @@ a {
   <h2> Nous proposons un encadrement adequat </h2>
   <p>Conseils-suivi </p>
  <p>Choisir une matière de travail</p>
+<a href="profil.html" onclick="localStorage.setItem('matiere','Mathematiques')" style="display:block; background:gold; color:black; padding:18px; border-radius:12px; text-align:center; font-weight:bold; font-size:16px; text-decoration:none; margin-top:12px;">Mathématiques</a>
 
-  <a href="profit.html"><button onclick="choisir('Mathématiques')">Mathématiques</button></a>
- <a href="profit.html"<button onclick="choisir('Physique-Chimie')">Physique-Chimie</button></a>
-<p id="voirNom"></p>
+<a href="profil.html" onclick="localStorage.setItem('matiere','Physique-Chimie')" style="display:block; background:gold; color:black; padding:18px; border-radius:12px; text-align:center; font-weight:bold; font-size:16px; text-decoration:none; margin-top:12px;">Physique-Chimie</a>
+
 <script>
 function choisir(matiere){
   localStorage.setItem("matiere", matiere);
