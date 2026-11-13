@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mon Profil - GO4 learn</title>
+  <link rel="stylesheet" href="style.css">
+  <style>body {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  color: gold;
+}
+
+.boite {
+  border: 1px solid gold;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+input, select {
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: 1px solid gold;
+  border-radius: 10px;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  background-color: gold;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+a {
+  color: gold;
+}</style>
+</head>
+<body>
+
+  <div class="logo">GO4</div>
+  <h1>Mon Profil</h1>
+
+  <div class="boite">
+    <h2>👤 Informations de l'élève</h2>
+    <p><b>NOM :</b> <span id="voirNom"></span></p>
+<p><b>Prénom :</b> <span id="voirPrenom"></span></p>
+<p><b>Classe :</b> <span id="voirClasse"></span></p>
+<p><b>Matière choisie :</b> <span id="voirMatiere"></span></p>
+  </div>
+
+  <div class="boite">
+    <h2>📊 Mon Suivi GO4</h2>
+    <p>Niveau : Débutant</p>
+    <p>Statut : En cours d'encadrement</p>
+  </div>
+
+  <div class="boite">
+    <h2>Es tu prét?</h2>
+    <a href="https://go4-tech-m21a.github.io/GO4-DIGITAL/"><button>Inscription en ligne</button></a>
+    <a href="https://chat.whatsapp.com/Dq062BBFNzaIKlmsWVqPyQ?s=cl&p=a&iam=2"> <button>Rejoindre le groupe GO4 après payement</button></a>
+  </div>
+
+  <a href="GO4.html"><button> Retour à l'accueil</button></a>
+<script>
+document.getElementById("voirNom").innerText = localStorage.getItem("nom");
+document.getElementById("voirPrenom").innerText = localStorage.getItem("prenom");
+document.getElementById("voirClasse").innerText = localStorage.getItem("classe");
+document.getElementById("voirMatiere").innerText = localStorage.getItem("matiere");
+  </script>
+</body>
+</html>
