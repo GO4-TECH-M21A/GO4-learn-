@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+‎<html lang="fr">
+‎<head>
+‎<meta charset="UTF-8">
+‎<title> L'espace GO4 Learn </title>
+  <style> 
+  body {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  color: gold;
+}
+
+.boite {
+  border: 1px solid gold;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+input, select {
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: 1px solid gold;
+  border-radius: 10px;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  background-color: gold;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+a {
+  color: gold;
+}
+  </style>
+</head>
+‎<body>
+‎<h1>Bienvenue sur GO4 Learn</h1>
+  <h2> Nous proposons un encadrement adequat </h2>
+  <p>Conseils-suivi </p>
+ <p>Choisir une matière de travail</p>
+
+  <a href="Profil.html"><button onclick="choisir('Mathématiques')">Mathématiques</button></a>
+  <a href="Profil.html"><button onclick="choisir('Physique-Chimie')">Physique-Chimie</button></a>
+<p id="voirNom"></p>
+<script>
+function choisir(matiere){
+  localStorage.setItem("matiere", matiere);
+}
+</script>
+  ‎</body>
+‎</html>
