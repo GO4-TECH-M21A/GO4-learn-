@@ -3,54 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GO4 learn</title>
-  <link rel="stylesheet" href="style.css">
+ <title>GO4-TECH M21A Academy</title>
+<link rel="stylesheet" href="style.css"
 </head>
 <body>
-  <h1>L'univers de GO4 apprentissage</h1>
-  <h2>Nous sommes disponibles <br>pour vos services</h2>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSenHs-x-LNVxcu__9X7jcDYhisBIFsoqJ0w397vn4-NYtdWDw/viewform?usp=sharing&ouid=107093599535715308871"><button>👉✍️ Inscrivez-vous</button></a> 
+  <h1>M21A Academy</h1>
+  <h2>Vous propose un encadrement pour vos élèves</h2>
+  <p>Nous proposons</p>
   
-  <p>Connexion <strong>GO4 learn</strong> </p>
-  <input type="text" placeholder="NOM">
-  <br> 
-  <input type="text" placeholder="Prénom">
- <br> 
- <input type="Gmail" placeholder="adresse Gmail"> 
-  <br>
-  <a href="tableau.html"><button onclick="sauver()">Connecter</button></a>
-<br>
-  <p><strong>Pas de compte?</strong></p>
-  <h4>Inscrivez-vous</h4>
-  <label>Classe de l'élève:</label>
+    <h2> Cours à domicile à Bobo + cours en ligne</h2>
+    <br>
+    <a href="https://wa.me/22673667961"><button>Contact</button></a> 
+    <br>
+    <br>
+    <h2>Cours de mathématiques en ligne pour la 3e et Tle</h2>
+  </>
+  
+  <label Classe de l'élève:</label>
   <br>
   <select Class="Classe de l'élève"> 
     <Option>3e</Option>
     <Option>Tle</Option> 
     </select>
-  <input type="texe" placeholder="NOM">
-  <input type="texe" placeholder="Prénom">
-  <input type="texte" placeholder="Adresse Gmail">
   <br>
- <a href="tableau.html"><button onclick="sauver()">Inscription</button></a>
-    <br>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSenHs-x-LNVxcu__9X7jcDYhisBIFsoqJ0w397vn4-NYtdWDw/viewform?usp=sharing&ouid=107093599535715308871"><button>👉✍️ Inscrivez-vous d'abord</button></a> 
+  
+  <a href="https://go4-tech-m21a.github.io/GO4-DIGITAL/"><button>Paieement - 2 seances par semaine</button></a>
+   <br> 
+  
+
+ 
 <p>En cas de dificulté contacter</p>
  <br> 
 <a href="https://wa.me/22673667961">Assistance</a>   
-  <script>
-function sauver(){
-  let tous = document.querySelectorAll('input');
-  tous.forEach(function(champ){
-    if(champ.value != ""){
-      if(champ.placeholder == "NOM") localStorage.setItem("nom", champ.value);
-      if(champ.placeholder == "Prénom") localStorage.setItem("prenom", champ.value);
-    }
-  });
-  let classe = document.querySelector('select');
-  if(classe) localStorage.setItem("classe", classe.value);
-}
-    </script>
   
-</body>
-  </html>
-    
